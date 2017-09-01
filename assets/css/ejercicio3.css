@@ -1,0 +1,53 @@
+
+*{
+	/* outline: 1px solid; */
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+
+
+}
+/*para tener referencia del max with*/
+.container{
+	/* background-color: pink; */
+	width: 100%;
+	max-width: 1200px;
+	margin:0px auto;    
+}
+.row:before, .row:after{
+	content: " ";
+	display: table;
+	
+}
+.row:after{
+	clear:both;
+	
+}
+/*para crear columnaS*/
+[class*="col-"]{
+	background-color: green; 
+	/* width: 30%; */
+	/* min-height: 280px; */
+	padding:12px;
+	float: left; 
+	 margin-left: 2%; 
+	 margin-bottom: 5%; 
+	margin-top: 3%;
+}
+.col-1{
+	/* (1/12)*100 */
+	width: 65%;
+	height: 350px;
+}
+.col-2{
+	
+  width: 30%;
+	height: 350px;
+}
+.col-3{
+	/* margin-right:  5% */
+  width: 30%;
+	height: 350px;
+	float: right;
+	margin-top: 33%;
+}
